@@ -165,6 +165,13 @@ body p {
 .logo-bar .huddle-logo {
   margin: 50px 0 10px 2%;
 }
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+  background-color: black;
+}
 .main {
   display: flex;
   justify-content: center;
