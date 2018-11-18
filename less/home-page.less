@@ -1,9 +1,7 @@
 // Home Page LESS Styles
 
 .main {
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    .center();
 
     .main-img {
         width: 100%;
@@ -12,7 +10,7 @@
     }
 
     .main-content {
-        margin-top: 115px;
+        margin-bottom: 62px;
 
         h2 {
             font-size: 4.1rem;
@@ -25,101 +23,16 @@
             line-height: 28px;
         }
 
-        /**
- * ----------------------------------------
- * animation heartbeat
- * ----------------------------------------
- */
- 
-        @-webkit-keyframes heartbeat {
-            from {
-              -webkit-transform: scale(1);
-                      transform: scale(1);
-              -webkit-transform-origin: center center;
-                      transform-origin: center center;
-              -webkit-animation-timing-function: ease-out;
-                      animation-timing-function: ease-out;
-            }
-            10% {
-              -webkit-transform: scale(0.91);
-                      transform: scale(0.91);
-              -webkit-animation-timing-function: ease-in;
-                      animation-timing-function: ease-in;
-            }
-            17% {
-              -webkit-transform: scale(0.98);
-                      transform: scale(0.98);
-              -webkit-animation-timing-function: ease-out;
-                      animation-timing-function: ease-out;
-            }
-            33% {
-              -webkit-transform: scale(0.87);
-                      transform: scale(0.87);
-              -webkit-animation-timing-function: ease-in;
-                      animation-timing-function: ease-in;
-            }
-            45% {
-              -webkit-transform: scale(1);
-                      transform: scale(1);
-              -webkit-animation-timing-function: ease-out;
-                      animation-timing-function: ease-out;
-            }
-          }
-          @keyframes heartbeat {
-            from {
-              -webkit-transform: scale(1);
-                      transform: scale(1);
-              -webkit-transform-origin: center center;
-                      transform-origin: center center;
-              -webkit-animation-timing-function: ease-out;
-                      animation-timing-function: ease-out;
-            }
-            10% {
-              -webkit-transform: scale(0.91);
-                      transform: scale(0.91);
-              -webkit-animation-timing-function: ease-in;
-                      animation-timing-function: ease-in;
-            }
-            17% {
-              -webkit-transform: scale(0.98);
-                      transform: scale(0.98);
-              -webkit-animation-timing-function: ease-out;
-                      animation-timing-function: ease-out;
-            }
-            33% {
-              -webkit-transform: scale(0.87);
-                      transform: scale(0.87);
-              -webkit-animation-timing-function: ease-in;
-                      animation-timing-function: ease-in;
-            }
-            45% {
-              -webkit-transform: scale(1);
-                      transform: scale(1);
-              -webkit-animation-timing-function: ease-out;
-                      animation-timing-function: ease-out;
-            }
-          }
-
         .big-btn {
-            -webkit-border-radius: 30px;
-            -moz-border-radius: 30px;
-            border-radius: 30px;
-            animation-name: heartbeat;
-            -webkit-animation: heartbeat 1.7s ease-in-out 1s infinite both;
-            animation: heartbeat 1.7s ease-in-out 1s infinite both;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 15px;
-            width: 200px;
-            height: 55px;
-            background-color: white;
-            color: hsl(257, 40%, 49%);
-            font-size: 2rem;
+            .button-creator(200px, 55px, @violet, 2rem);
+            // .border-radius();
+            // animation-name: @heartbeat;
+            // -webkit-animation: @heartbeat 1.7s ease-in-out 1s infinite both;
+            // animation: @heartbeat 1.7s ease-in-out 1s infinite both;
             border: 1px solid silver;
             cursor: pointer;
             &:hover {
-                background-color: hsl(257, 40%, 49%);
+                background-color: @violet;
                 color: white;
             }
         }

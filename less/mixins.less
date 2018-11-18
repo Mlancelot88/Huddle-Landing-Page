@@ -1,0 +1,96 @@
+// Mixins Start Here
+
+// Center
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+// Border Radius
+.border-radius(@radius: 30px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.button-creator(@width, @height, @font-color, @font-size) {
+    .border-radius(30px);
+    .center;
+    width: @width;
+    height: @height;
+    color: @font-color;
+    font-size: @font-size;
+}
+
+// Heartbeat Animation
+// .keyframes(@heartbeat) {
+//         @-webkit-keyframes @heartbeat {
+//             from {
+//               -webkit-transform: scale(1);
+//                       transform: scale(1);
+//               -webkit-transform-origin: center center;
+//                       transform-origin: center center;
+//               -webkit-animation-timing-function: ease-out;
+//                       animation-timing-function: ease-out;
+//             }
+//             10% {
+//               -webkit-transform: scale(0.91);
+//                       transform: scale(0.91);
+//               -webkit-animation-timing-function: ease-in;
+//                       animation-timing-function: ease-in;
+//             }
+//             17% {
+//               -webkit-transform: scale(0.98);
+//                       transform: scale(0.98);
+//               -webkit-animation-timing-function: ease-out;
+//                       animation-timing-function: ease-out;
+//             }
+//             33% {
+//               -webkit-transform: scale(0.87);
+//                       transform: scale(0.87);
+//               -webkit-animation-timing-function: ease-in;
+//                       animation-timing-function: ease-in;
+//             }
+//             45% {
+//               -webkit-transform: scale(1);
+//                       transform: scale(1);
+//               -webkit-animation-timing-function: ease-out;
+//                       animation-timing-function: ease-out;
+//             }
+//           }
+//           @keyframes @heartbeat {
+//             from {
+//               -webkit-transform: scale(1);
+//                       transform: scale(1);
+//               -webkit-transform-origin: center center;
+//                       transform-origin: center center;
+//               -webkit-animation-timing-function: ease-out;
+//                       animation-timing-function: ease-out;
+//             }
+//             10% {
+//               -webkit-transform: scale(0.91);
+//                       transform: scale(0.91);
+//               -webkit-animation-timing-function: ease-in;
+//                       animation-timing-function: ease-in;
+//             }
+//             17% {
+//               -webkit-transform: scale(0.98);
+//                       transform: scale(0.98);
+//               -webkit-animation-timing-function: ease-out;
+//                       animation-timing-function: ease-out;
+//             }
+//             33% {
+//               -webkit-transform: scale(0.87);
+//                       transform: scale(0.87);
+//               -webkit-animation-timing-function: ease-in;
+//                       animation-timing-function: ease-in;
+//             }
+//             45% {
+//               -webkit-transform: scale(1);
+//                       transform: scale(1);
+//               -webkit-animation-timing-function: ease-out;
+//                       animation-timing-function: ease-out;
+//             }
+//           }
+//         }
