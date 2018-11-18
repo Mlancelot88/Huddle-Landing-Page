@@ -129,6 +129,9 @@ table {
 * {
   box-sizing: border-box;
 }
+.container {
+  margin: 0 auto;
+}
 html {
   font-size: 62.5%;
   background-color: #674baf;
@@ -146,10 +149,12 @@ body h5,
 html h6,
 body h6 {
   font-family: 'Poppins', sans-serif;
+  color: white;
 }
 html p,
 body p {
   font-family: 'Open Sans', sans-serif;
+  color: white;
 }
 .logo-bar {
   display: flex;
@@ -157,4 +162,42 @@ body p {
 }
 .logo-bar .huddle-logo {
   margin: 50px 0 10px 2%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.main .main-img {
+  width: 100%;
+  height: auto;
+  margin: 68px 4% 0 5.4%;
+}
+.main .main-content {
+  margin-top: 115px;
+}
+.main .main-content h2 {
+  font-size: 4.1rem;
+  line-height: 55px;
+  margin-bottom: 13px;
+}
+.main .main-content p {
+  font-size: 1.8rem;
+  line-height: 28px;
+}
+.main .main-content .big-btn {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 200px;
+  height: 55px;
+  background-color: white;
+  color: #674baf;
+  font-size: 2rem;
+  border: 1px solid silver;
+  cursor: pointer;
 }
